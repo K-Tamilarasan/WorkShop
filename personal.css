@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+    url(assets/star.png) 90% 5%/7% no-repeat, url(assets/pirmid.png) 83% 99%/8% no-repeat,
+  url(assets/star2.png) 1% 50%/10% no-repeat,url(assets/HERO-BG.png) center/cover no-repeat;
+  background-color: #0A1628;
+        background-color: #0A1628;
+
+}
+
+main {
+    min-height: 80dvh;
+    width: 80%;
+    background-color: #323D4D;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(100, 91, 91);
+}
+main .mark{
+    position: relative;
+    left: 95%;
+    font-size: 25px;
+    top: 20px;
+    background-color: aquamarine;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.three-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.one-icon{
+    /* width: 60px;
+    height: 60px; */
+    /* background-color: #323D4D; */
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one-icon i{
+    color: white;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 40px;
+        box-shadow: 0px 0px 10px rgb(100, 91, 91);
+}
+.one-icon i:hover{
+    color: #2fa970;
+    border: 1px solid #2fa970;
+    transition: 0.5s;
+}
+.one-icon span {
+    height: 4px;
+    width: 5em;
+    background-color: rgb(175, 158, 158);
+    margin-top: 10px;
+    display: inline-block;
+}
+main h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 16px;
+}
+.bar{
+    width: 80%;
+    height: 20px;
+    background-color: #3B485A;
+    margin: 10px auto;
+    border-radius: 10px;
+    
+}
+.bar1{
+    width: 5%;
+    height: 100%;
+    background-color: #132034;
+    border-radius: 10px;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #4877bd;
+    border-radius: 20px;
+}
+.flname {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    /* background-color: blanchedalmond; */
+}
+.fname, .lname {
+    /* width: 50%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex: 1;
+    /* gap: 10px; */
+}
+.fname input, .lname input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #7b899e;
+}
+input{
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: transparent;
+    border: 1px solid #7b899e;
+}
+label {
+    color: white;
+    font-size: 20px;
+}
+
+form button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to right,rgb(136, 234, 71),#2fa970);
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    margin: 5px auto;
+    cursor: pointer;
+}
+form button:hover {
+    background-image: linear-gradient(to right,rgb(188, 235, 157),#2fa970);
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgb(100, 91, 91);
+}
+
+@media screen and (max-width: 500px) {
+    .one-icon span {
+    height: 4px;
+    width: 2rem;
+    /* background-color: rgb(175, 158, 158);
+    margin-top: 10px;
+    display: inline-block; */
+}
+main .mark {
+    left: 89%;
+    top: 18px;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+}
+.flname {
+    gap: 7px;
+}
+label {
+    font-size: 15px;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+}
+.fname input, .lname input{
+    padding: 5px;
+}
+form {
+    gap: 5px;
+}
+form button {
+    width: 70%;
+    font-size: 20px;
+}
+.one-icon i {
+    color: white;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 23px;
+    box-shadow: 0px 0px 10px rgb(100, 91, 91);
+}
+}
